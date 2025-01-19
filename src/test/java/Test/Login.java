@@ -13,7 +13,7 @@ import com.tutorialninja.pomrepository.LogInPage;
 public class Login extends Base {
 
 	//LoggingInWithValidDetails
-	@Test(priority = 1)
+	@Test(priority = 1)   
 
 	public void LoggingInWithValidDetails() throws IOException, InterruptedException {
 		WebUtils.implicitWait(driver);
@@ -27,7 +27,6 @@ public class Login extends Base {
 		login.getLoginbtn().click();
 		Thread.sleep(2000);
 		assertEquals(login.getEditYourAccountLinkText().getText(), FileUtils.readCommonData("accountcreated"));
-
 	}
 	
 	//LoggingInWithInvalidDetails
