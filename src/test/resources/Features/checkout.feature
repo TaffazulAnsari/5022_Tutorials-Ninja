@@ -19,6 +19,7 @@ Feature: Checkout Process
     Given I have completed the delivery address step
     When I continue to the delivery method
     Then I should see the payment method continue button
+    
 
   Scenario: User continues to payment method
     Given I have completed the delivery method step
