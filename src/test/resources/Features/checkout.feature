@@ -26,6 +26,7 @@ Feature: Checkout Process
     When I continue to the payment method
     Then I should see the confirm order button
 
+
   Scenario: User confirms the order
     Given I have completed the payment method step
     When I confirm the order
