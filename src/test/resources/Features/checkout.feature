@@ -29,3 +29,4 @@ Feature: Checkout Process
     Given I have completed the payment method step
     When I confirm the order
     Then I should see the order confirmation message
+ 
