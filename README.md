@@ -2,14 +2,14 @@
 ![](https://github.com/TaffazulAnsari/images/blob/main/image/ninja.png)
 
 ## Introduction 
-BEFIT is a health-related service platform that offers health-related services, including activity tracking, mental wellness programs, nutrition plans, and personal training bookings. The testing focused on verifying the functionality, usability, and accessibility of these features across multiple devices and browsers.
+The Tutorials Ninja e-commerce platform offers a variety of features, including user registration, product browsing, cart management, and checkout. The testing focused on verifying the functionality, usability, and accessibility of these features across multiple devices and browsers.
 
 ## Objective
 
-The goal of this testing project is to evaluate the **functionality**, **performance**, and **usability** of the **BEFIT** website hosted at [Link](https://baidu-bandits-072-git-main-sanjukumari-techs-projects.vercel.app/). This testing ensures that the website works as expected, navigates smoothly, and provides a user-friendly experience.
+The goal of this testing project is to evaluate the **functionality, performance, and usability** of the **Tutorials Ninja** website hosted at https://tutorialsninja.com/demo/index.php?route=common/home. This testing ensures that the website works as expected, navigates smoothly, and provides a user-friendly experience.
 
 ## Project Type
-Manual Testing 
+Manual and Automated Testing
 
 ## Table of Contents
 
@@ -26,26 +26,32 @@ Manual Testing
 ## Test Plan Overview
 
 **Objective:**  
-To evaluate the functionality, performance, and usability of the **BEFIT** website, ensuring the site operates smoothly across different browsers and devices.
+To evaluate the functionality, performance, and usability of the Tutorials Ninja website, ensuring the site operates smoothly across different browsers and devices.
 
 **Scope:**  
-The testing will focus on **Functional Testing** and **Usability Testing**.
+The testing will focus on **Functional Testing** and **Usability Testing, Performance Testing, Security Testing, Compatibility Testing, and Automation Testing using Selenium(POM) with Cucumber.**.
 
 **Testing Areas:**  
-- Website navigation  
-- Login/Signup processes  
+- User Registration and Login 
+- Login/Signup processes
+- Search Functionality
+- Cart Management
+- Checkout Process
+- Product Browsing and Display
+- Mobile and Cross-browser Compatibility  
 - Information display  
 - Overall user experience  
 - Accessibility
+- Error Handling
 
-**Test Type:**  
-- **Manual Testing**:  
-  - **Functional Testing**: Verifying that the website’s features function as expected.  
-  - **Usability Testing**: Evaluating the ease of navigation, clarity of product information, and accessibility.
+
 
 **Tools Used:**  
-- Browser Developer Tools  
-- Figma (for wireframing)  
+- Browser Developer Tools
+- Selenium WebDriver
+- Cucumber Framework  
+- Figma (for wireframing)
+- Xmind  
 - Google Docs/Sheets (for documentation)  
 - Trello/Jira (for defect tracking)
 
@@ -53,13 +59,14 @@ The testing will focus on **Functional Testing** and **Usability Testing**.
 - Desktop and Mobile Browsers (Chrome, Firefox, Edge)
 
 **Test Execution Date:**  
-12/10/2024 to 16/11/2024
+17/01/2025 to 13/01/2025
 
 **Approved By:**  
-Anjali Shaw
+xto10x Hackathon
 
 **Tester:**  
 Taffazul Ansari
+Prajyoti Suryawanshi
 
 
 ## Scope of Testing
@@ -67,23 +74,34 @@ Taffazul Ansari
 ### Functional Testing
 Ensures the core features of the website work correctly:
 - **Link Navigation**: Verifying all links lead to the correct pages and are not broken.
-- **Login/Signup**: Validating both correct and incorrect login/signup scenarios.
+- **Login/Signup**: Validating both correct and incorrect login/signup scenarios for user authentication.
+- **Product Browsing and Filtering:** Ensuring that products can be viewed and filtered accurately.
+- **Cart Management:** Testing adding, removing, and updating items in the cart.
+- **Checkout Process:** Verifying that the checkout flow functions smoothly, including payment and order confirmation.
 - **Services Information Display**: Ensuring accurate and formatted service details.
 - **Data Entry and Verification**: Testing form data entry and validation.
 
 ### Usability Testing
 Focuses on the user’s ability to interact with the website:
 - **Navigation Ease**: Testing whether the website’s navigation is intuitive.
+- **Product Information Accessibility:** Ensuring text readability and visual clarity
 - **Services Information Accessibility**: Ensuring text readability and visual clarity.
 - **Responsive Design**: Verifying that the website adjusts across devices.
 - **Browser Compatibility**: Ensuring consistent behavior across major browsers.
 
+### Automation Testing
+- Automating key test cases to ensure faster and consistent validations:
+- User registration and login flows.
+- Product search and filtering functionality.
+- Cart operations.
+- Checkout process validation.
 
 ## Test Criteria
 
 ### Pass Criteria:
 - All functional test cases pass successfully.
 - Usability testing yields positive feedback with no significant hindrances to user experience.
+- Automated test scripts execute without errors.
 
 ### Fail Criteria:
 - Critical navigation problems (e.g., broken links).
@@ -106,6 +124,9 @@ Focuses on the user’s ability to interact with the website:
 4. **Data Entry and Verification**:  
    - Add new data (such as filling out forms) and check if it is stored and displayed properly on the website.
 
+5. **Checkout Process:**
+- Validate that users can successfully complete the checkout process, including payment and order confirmation.  
+
 ### Usability Testing:
 1. **Navigation Ease**:  
    - Evaluate if the website’s navigation is user-friendly. Are menus labeled clearly? Can users find content effortlessly?
@@ -119,6 +140,10 @@ Focuses on the user’s ability to interact with the website:
 4. **Browser Compatibility**:  
    - Test the website’s performance across major browsers such as Chrome, Firefox, Edge, and Safari.
 
+### Automation Testing:
+  - Create reusable test scripts for critical workflows.
+  - Implement the Page Object Model (POM) for maintainability.
+  - Validate scenarios using Cucumber for behavior-driven development (BDD).
 
 ## Deliverables
 
@@ -131,7 +156,7 @@ Focuses on the user’s ability to interact with the website:
 ## Resources Required
 
 - **Hardware**: Devices (mobile, tablet, desktop) for testing.
-- **Software**: Browsers (Chrome, Firefox, Edge, Safari), tools for capturing screenshots/videos (Snipping Tool).
+- **Software**: Browsers (Chrome, Firefox, Edge, Safari), Selenium WebDriver, and Jira for defect tracking.
 - **Access to Website**: Ensure testers have access to the site for performing the tests.
 
 
@@ -146,27 +171,30 @@ Focuses on the user’s ability to interact with the website:
 
 ## Recommendations  and Suggestions
 
-1. **Login/Signup**:  
-   Enhance input validation and improve error messages for better user understanding.
+1. **User Registration/Login:**  
+  Enhance input validation and improve error messages for better user understanding.
 
-2. **Activity Tracker**:  
-   Fix data-fetching logic for past and upcoming activities to ensure consistency.
+2. **Product Browsing:**  
+  Optimize the search and filtering logic to ensure accurate results.
 
-3. **Mental Wellness**:  
-   Improve algorithms for more accurate personalized recommendations and progress tracking.
+3. **Cart Management:**:  
+   Resolve intermittent issues with item removal and quantity updates.
 
-4. **Nutrition**:  
-   Align nutrition suggestions with user preferences to avoid irrelevant plans.
-
-5. **Personal Training**:  
+4. **Checkout Process:**:  
+   Investigate and resolve occasional failures in payment processing.
+   
+6. **Responsive Design:**
+    Address inconsistencies in the mobile layout for smoother navigation.
+   
+8. **Personal Training**:  
    Investigate and resolve intermittent booking failures for certain time slots.
 
 
 ## Conclusion
 
-The **BEFIT** website has undergone extensive testing for both functionality and usability. Most core features passed the tests, although some minor bugs were identified, particularly with the **Login/Signup**, **Activity Tracker**, **Mental Wellness**, and **Personal Training** modules. Addressing the identified issues will significantly enhance the user experience and functionality of the platform.
+The **Tutorials Ninja website** has undergone extensive testing for functionality, usability, and automation. Most core features passed the tests, although some minor bugs were identified, particularly in the User **Registration/Login, Product Browsing, Cart Management, and Checkout Process** modules. Addressing the identified issues will significantly enhance the user experience and functionality of the platform.
 
-By following the recommendations outlined, **BEFIT** can ensure that its website meets the highest standards of usability, performance, and functionality.
+By following the recommendations outlined, **Tutorials Ninja** can ensure that its website meets the highest standards of usability, performance, and functionality.
 
 ---
 
